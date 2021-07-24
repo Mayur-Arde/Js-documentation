@@ -4,6 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Open Sans', sans-serif;
+  /* background-color: rgb(253, 244, 226); */
 }
 
 a {
@@ -87,10 +88,11 @@ a {
 
 /* main information */
 #main-doc {
-  max-width: 70%;
+  max-width: 90%;
   overflow: auto;
   padding: 40px 0px 0px 40px;
   line-height: 1.6;
+  background-color: rgb(253, 250, 243);
 }
 
 .section-box {
