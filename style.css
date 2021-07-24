@@ -129,7 +129,6 @@ code {
   #footer a:hover {
     background-color: #cdf0ea;
   }
-}
 
 /* All media queries */
 @media only screen and (max-width: 1220px) {
