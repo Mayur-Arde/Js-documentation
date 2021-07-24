@@ -94,7 +94,6 @@ a {
 }
 
 .section-box {
-  /* display: inline-block; */
   margin-bottom: 45px;
 }
 
@@ -180,7 +179,8 @@ code {
   }
 
   .top-container p {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 300;
   }
 
   .img {
