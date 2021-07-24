@@ -11,6 +11,7 @@ a {
     color: inherit;
 }
 
+/* top conatiner */
 .top-container {
     background-color: #CDF0EA;
     height: 100vh;
@@ -39,7 +40,6 @@ a {
 }
 
 /* navbar */
-
 #navbar {
     position: sticky;
     top: 0%;
@@ -70,13 +70,22 @@ a {
     margin-bottom: 30px;
 }
 
+/* footer */
 #footer{
     margin-top: 19px;
     color: #03256C;
     font-weight: 600;
-    /* text-shadow:1px 1px rgb(0, 0, 0); */
 }
 
+#footer a:hover {
+    background-color: #CDF0EA;
+}
+
+#footer2{
+    display: none;
+}
+
+/* main information */
 #main-doc {
     max-width: 70%;
     overflow: auto;
@@ -91,7 +100,6 @@ a {
 }
 
 .header-section {
-    /* margin-top: 10px; */
     margin-bottom: 10px;
     font-size: 32px;
     font-weight: 500;
@@ -116,7 +124,8 @@ code {
     word-break: break-all;
 }
 
-@media only screen and (max-width: 1221px) {
+/* All media queries */
+@media only screen and (max-width: 1220px) {
     #navbar{
         padding: 20px;
     }
@@ -149,21 +158,35 @@ code {
 }
 
 @media only screen and (max-width: 650px){
-    #navbar{
+    /* for mobile */
+    #navbar {
         display: none;
     }
 
-    #main-doc{
+    #main-doc {
         max-width: 100%;
         padding: 7px;
     }
-    .section-box{
-        /* display: inline-block; */
+
+    .top-container h1 {
+        font-size: 38px;
+        margin-bottom: 3px;
+    }
+    
+    .top-container p {
+        font-size: 12px;
+    }
+    
+    .img {
+        max-width: 50px;
+        max-height: 50px ;
+    }
+
+    .section-box {
         margin-bottom: 35px;
     }
     
     .header-section {
-        /* margin-top: 10px; */
         margin-bottom: 8px;
         font-size: 22px;
         font-weight: 500;
@@ -181,10 +204,6 @@ code {
     }
 
     code {
-        display: inline-block;
-        background-color: rgb(172, 172, 172);
-        /* border: 2px soild rgb(172, 172, 172); */
-        border-radius: 3px;
         padding: 3px;
         margin : 1px;
         word-break: break-all;
@@ -195,22 +214,15 @@ code {
         margin-bottom: 20px;
     }
 
-    .top-container h1{
-        font-size: 38px;
-        font-weight: 600;
-        margin-bottom: 3px;
+    #footer2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #03256C;
+        font-weight: 500;
     }
     
-    .top-container p {
-        font-size: 12px;
-        font-weight: 200;
-        margin-bottom: 5px;
+    #footer2 a:hover {
+        background-color: #CDF0EA;
     }
-    
-    .img{
-        max-width: 50px;
-        max-height: 50px ;
-        margin-top: 4px;
-    }
-
 }
